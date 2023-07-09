@@ -1,4 +1,9 @@
 ### Hi there 👋
+I'm Anshu Patel. I know it sounds like Gujarati, but I'm from Uttar Pradesh, India.
+Well! I'm just exploring different corners of Computer Science. Yet, Web Development is that which excites me most.
+
+[![Anshu's GitHub stats](https://github-readme-stats.vercel.app/api?username=anshuptelz)](https://github.com/anuraghazra/github-readme-stats)
+
 
 <!--
 **anshupatelz/anshupatelz** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
