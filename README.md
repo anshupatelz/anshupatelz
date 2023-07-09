@@ -3,7 +3,7 @@ I'm Anshu Patel. I know it sounds like Gujarati, but I'm from Uttar Pradesh, Ind
 Well! I'm just exploring different corners of Computer Science. Yet, Web Development is that which excites me most.
 
 [![Anshu Patel's GitHub stats](https://github-readme-stats.vercel.app/api?username=anshupatelz)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anshupatelz)](https://github.com/anuraghazra/github-readme-stats)
 
 
 <!--
