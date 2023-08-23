@@ -1,3 +1,6 @@
+##Loading...
+
+<!----
 ### Hi there 👋
 I'm Anshu Patel. I know it sounds like Gujarati, but I'm from Uttar Pradesh. lol
 Well! I'm just exploring different corners of Computer Science. Yet, Web Development is that which excites me the most.
@@ -7,7 +10,7 @@ Well! I'm just exploring different corners of Computer Science. Yet, Web Develop
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anshupatelz)](https://github.com/anuraghazra/github-readme-stats)
 
 
-<!--
+
 [![trophy](https://github-profile-trophy.vercel.app/?username=anshupatelz&theme=onedark)](https://github.com/ryo-ma/github-profile-trophy)
 
 
