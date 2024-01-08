@@ -1,5 +1,3 @@
-### Loading...
-
 <!----
 ### Hi there 👋
 I'm Anshu Patel. I know it sounds like Gujarati, but I'm from Uttar Pradesh. lol
@@ -27,3 +25,24 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+Hello World! My name is `Anshu Patel` 😄
+========================================================================================================================================
+
+🌍  I am an Aspiring Full Stack (#MERN Stack) Developer based in Kanpur, India.
+<br/>
+
+### Skills
+
+[![My Frontend Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=js,react)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=bootstrap,tailwind)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=scss,figma)](https://skillicons.dev)
+<br/>
+[![My Frontend Skills](https://skillicons.dev/icons?i=nodejs,express)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=mysql,mongodb)](https://skillicons.dev)
+<br>
+
+### Socials
+
+<div id="badges">
+  <a href="https://www.linkedin.com/in/anshupatelz/">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
+  </a>
+</div>
