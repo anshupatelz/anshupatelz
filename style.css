@@ -1,0 +1,191 @@
+/* Theme Colors - Start */
+:root {
+    --background-color-light: #E4E1FE;
+    --text-color-light: #333333;
+    --primary-color-light: #3498db;
+    --accent-color-light: #e74c3c;
+    --border-color-light: #dddddd;
+}
+
+:root {
+    --background-color-dark: #05070F;
+    --text-color-dark: #f0f0f0;
+    --primary-color-dark: #2980b9;
+    --accent-color-dark: #4D34FA;
+    --border-color-dark: #333333;
+}
+
+/* Theme Colors - End */
+
+/* CSS Reset - Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* CSS Reset - End */
+
+/* Global Styles - Start */
+body {
+    background: var(--background-color-dark);
+    color: var(--text-color-dark);
+}
+
+main {
+    min-height: 95vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.profile-img,
+.intro,
+.call-to-action,
+.about,
+.social-links,
+.projects,
+.quick-links {
+    background-color: rgb(217, 217, 217, 0.05);
+    color: var(--text-color-dark);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.profile-img {
+    grid-column: span 2;
+    padding: 0 !important;
+}
+
+.intro {
+    grid-column: span 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.call-to-action .btn {
+    padding: 7px 15px;
+    width: 100%;
+    background-color: rgb(217, 217, 217, 0.05);
+    color: var(--text-color-dark);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.call-to-action .btn-accent {
+    background-color: var(--accent-color-dark);
+    font-weight: 500;
+}
+
+.about {
+    grid-column: span 5;
+}
+
+.social-links {
+    grid-column: span 1;
+}
+
+.projects {
+    grid-column: span 6;
+}
+
+.quick-links {
+    grid-column: span 6;
+}
+
+.link-item {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    grid-column: span 12;
+    text-align: center;
+}
+
+/* Add responsive behavior */
+/* ---------Tablet Mode */
+/* @media (max-width: 768px) */
+@media (max-width: 768px) {
+    .profile-img {
+        grid-column: span 3;
+    }
+
+    .call-to-action {
+        grid-column: span 5;
+    }
+
+    .intro {
+        grid-column: span 9;
+    }
+
+    .about {
+        grid-column: span 7;
+    }
+
+    .social-links {
+        grid-column: span 12;
+    }
+
+    .quick-links,
+    .projects {
+        grid-column: span 12;
+    }
+}
+
+/* ---------Mobile Mode */
+@media (max-width: 580px) {
+
+    .profile-img,
+    .call-to-action {
+        grid-column: span 6;
+    }
+
+    .intro,
+    .about,
+    .social-links,
+    .quick-links,
+    .projects {
+        grid-column: span 12;
+    }
+}
+
+/* Global Styles - End */
+
+/* Theme Mode Switcher - Start */
+/* Theme Mode Switcher - End */
