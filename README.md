@@ -1,25 +1,18 @@
 # Hello! I'm Anshu Patel 🧑‍💻
-
-👋  I'm a 2nd year BCA student and Aspiring Full Stack (`#MERN Stack`) Developer based in Kanpur, India. Currently honing my skills in Web Development, having practical knowledge of various web technologies.
+👋  I'm a 2nd year BCA student and Aspiring Full Stack (`MERN Stack`) Developer based in Kanpur, India. Currently honing my skills in Web Development, having practical knowledge of various web technologies.
 
 ## 🛠️ Skills
-
 🎨 **Frontend:** `HTML`, `CSS`, `JavaScript`, `Sass`, `Bootstrap`, `Tailwind CSS`, `React.js` <br>
 💽 **Databases:** `MySQL`, `MongoDB`<br>
-💻 **Backend:** `Node`, `Express`<br>
+💻 **Backend:** `Node.js`, `Express`<br>
 👨‍💻 **Version Control:** `Git`<br>
 
-<!--
-[![My Frontend Skills](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=js,react)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=bootstrap,tailwind)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=scss,figma)](https://skillicons.dev)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![My Backend Skills](https://skillicons.dev/icons?i=nodejs,express)](https://skillicons.dev) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![My Skills](https://skillicons.dev/icons?i=mysql,mongodb)](https://skillicons.dev)
-<br/>
--->
 
-<!--
 ## 🚀 Projects
-### 1. VacaSpace 📊
-- **Tech Stack:** 
-- **Description:**
--->
+### 1. A Personal Bio Link Page [(Link)](https://anshupatel.in)
+- **Tech Stack:**  `HTML`, `CSS`, `JavaScript`
+- **Description:** It just a simple web page following current Bento UI Trend , have some basic information about me and some usefull links. You can think like `linktr.ee` but improved.
+- **Learnings:** With it, I went deeper into CSS Grid and Flexbox.
 
 
 ## 📬 Connect with Me
