@@ -55,6 +55,15 @@ main {
     min-height: 95vh;
 }
 
+.btn {
+    padding: 7px 15px;
+    background-color: rgb(217, 217, 217, 0.05);
+    color: var(--text-color-dark);
+    border-radius: 15px;
+    text-align: start;
+    cursor: pointer;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -67,7 +76,7 @@ main {
 .profile-img,
 .intro,
 .call-to-action,
-.about,
+.featured,
 .social-links,
 .projects,
 .quick-links {
@@ -99,12 +108,8 @@ main {
 }
 
 .call-to-action .btn {
-    padding: 7px 15px;
-    width: 100%;
-    background-color: rgb(217, 217, 217, 0.05);
-    color: var(--text-color-dark);
-    border-radius: 15px;
     text-align: center;
+    width: 100%;
 }
 
 .call-to-action .btn-accent {
@@ -112,20 +117,30 @@ main {
     font-weight: 500;
 }
 
-.about {
+.featured {
     grid-column: span 5;
 }
 
 .social-links {
     grid-column: span 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .projects {
     grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .quick-links {
     grid-column: span 6;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .link-item {
@@ -136,6 +151,7 @@ main {
 footer {
     grid-column: span 12;
     text-align: center;
+    padding: 10px 0;
 }
 
 /* Add responsive behavior */
@@ -154,15 +170,19 @@ footer {
         grid-column: span 9;
     }
 
-    .about {
+    .featured {
         grid-column: span 7;
+        grid-row: 2;
     }
 
     .social-links {
-        grid-column: span 12;
+        grid-column: span 2;
     }
 
-    .quick-links,
+    .quick-links {
+        grid-column: span 10;
+    }
+
     .projects {
         grid-column: span 12;
     }
@@ -174,11 +194,27 @@ footer {
     .profile-img,
     .call-to-action {
         grid-column: span 6;
+        grid-row: 1;
     }
 
-    .intro,
-    .about,
-    .social-links,
+    .intro {
+        grid-column: span 12;
+        grid-row: 2;
+    }
+
+    .featured {
+        grid-column: span 12;
+        grid-row: 3;
+    }
+
+    .social-links{
+        grid-column: span 12;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        width: 100%;
+    }
     .quick-links,
     .projects {
         grid-column: span 12;
@@ -187,5 +223,37 @@ footer {
 
 /* Global Styles - End */
 
-/* Theme Mode Switcher - Start */
-/* Theme Mode Switcher - End */
+/* Quick Links Styles - Start */
+.quick-links .link-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding:  10px 20px;
+}
+
+/* Quick Links Styles - End */
+
+/* Projects Styles - Start */
+.projects .link-item{
+    padding: 20px;
+}
+.projects .project-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Projects Styles - End */
+
+/* Social Links Styles - Start */
+.social-links .link-item{
+    font-size: 24px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+/* Social Links Styles - End */
