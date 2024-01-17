@@ -1,18 +1,20 @@
 /* Theme Colors - Start */
 :root {
-    --background-color-light: #E4E1FE;
-    --text-color-light: #333333;
-    --primary-color-light: #3498db;
-    --accent-color-light: #e74c3c;
-    --border-color-light: #dddddd;
+    --background-color: linear-gradient(#13222F 0%, #10151D 30%);
+    --text-color: #d9dfe7;
+    --accent-color: #4D34FA;
+    --primary-color: #0e141c;
+    --secondary-color: rgb(217, 217, 217, 0.05);
 }
 
-:root {
-    --background-color-dark: #05070F;
-    --text-color-dark: #f0f0f0;
-    --primary-color-dark: #2980b9;
-    --accent-color-dark: #4D34FA;
-    --border-color-dark: #333333;
+body.lightMode {
+    --background-color: linear-gradient(#acd6fa 0%, #eeeeee 30%);
+    --text-color: #333333;
+    --accent-color: #4D34FA;
+    --primary-color: #ffffff;
+    --secondary-color: rgba(82, 82, 82, 0.25);
+
+
 }
 
 /* Theme Colors - End */
@@ -46,9 +48,17 @@ button {
 /* CSS Reset - End */
 
 /* Global Styles - Start */
+
 body {
-    background: var(--background-color-dark);
-    color: var(--text-color-dark);
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+.background-img {
+    background-image: url(/resources/background-dots.svg);
+    filter: contrast(100%);
+    background-position: 50%;
+    background-size: 180px;
 }
 
 main {
@@ -57,8 +67,8 @@ main {
 
 .btn {
     padding: 7px 15px;
-    background-color: rgb(217, 217, 217, 0.05);
-    color: var(--text-color-dark);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
     border-radius: 15px;
     text-align: start;
     cursor: pointer;
@@ -80,9 +90,10 @@ main {
 .social-links,
 .projects,
 .quick-links {
-    background-color: rgb(217, 217, 217, 0.05);
-    color: var(--text-color-dark);
+    background-color: var(--primary-color);
+    color: var(--text-color);
     padding: 20px;
+    border: 1.5px solid #242f41;
     border-radius: 25px;
 }
 
@@ -113,7 +124,7 @@ main {
 }
 
 .call-to-action .btn-accent {
-    background-color: var(--accent-color-dark);
+    background-color: var(--accent-color);
     font-weight: 500;
 }
 
@@ -207,14 +218,14 @@ footer {
         grid-row: 3;
     }
 
-    .social-links{
+    .social-links {
         grid-column: span 12;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-
         width: 100%;
     }
+
     .quick-links,
     .projects {
         grid-column: span 12;
@@ -229,15 +240,16 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    padding:  10px 20px;
+    padding: 10px 20px;
 }
 
 /* Quick Links Styles - End */
 
 /* Projects Styles - Start */
-.projects .link-item{
+.projects .link-item {
     padding: 20px;
 }
+
 .projects .project-heading {
     display: flex;
     flex-direction: row;
@@ -248,7 +260,7 @@ footer {
 /* Projects Styles - End */
 
 /* Social Links Styles - Start */
-.social-links .link-item{
+.social-links .link-item {
     font-size: 24px;
     padding: 15px;
     display: flex;
@@ -256,4 +268,54 @@ footer {
     align-items: center;
     flex: 1;
 }
+
 /* Social Links Styles - End */
+
+/* theme-mode styles - Start */
+
+
+
+
+.theme-switcher {
+    width: 100%;
+}
+
+.checkbox {
+    display: none;
+}
+
+.dark, .light{
+background-color: transparent;
+text-align: center;
+width: 50%;
+padding: 7px 0;
+}
+
+label {
+    width: 100%;
+    position: relative;
+    display: block;
+    border-radius: 25px;
+    display: flex;
+    border: 2px solid #242f41;
+    text-align: center;
+}
+
+label:after {
+    content: "";
+    height: 24px;
+    width: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: 25px;
+    padding: 7px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.checkbox:checked+label:after {
+    content: "";
+    left: 50%;
+}
+
+/* theme-mode styles - End */
