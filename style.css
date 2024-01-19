@@ -30,7 +30,7 @@ button {
     --border-color: rgb(36, 47, 65);
     --accent-color: rgb(77, 52, 250);
     --text-color: rgb(178, 178, 178);
-    --bg-image: url(/bio/resources/bg-dark-dots.svg);
+    --bg-image: url(https://anshupatel.in/bio/resources/bg-dark-dots.svg);
     --font-size: 1rem;
 }
 
@@ -41,7 +41,7 @@ body.lightMode {
     --border-color: rgb(77, 52, 250, 0.3);
     --accent-color: rgb(77, 52, 250);
     --text-color: #2c2c2c;
-    --bg-image: url(/bio/resources/bg-light-dots.svg);
+    --bg-image: url(https://anshupatel.in/bio/resources/bg-light-dots.svg);
 }
 
 /* Theme Variables - End */
