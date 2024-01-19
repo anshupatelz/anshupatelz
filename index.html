@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smoot">
 
 <head>
     <meta charset="UTF-8">
@@ -20,18 +20,17 @@
 <body>
     <div class="background-img">
         <main>
-
             <div class="container">
                 <img class="profile-img" src="resources/profile-img.jpg" alt="">
                 <div class="intro">
-                    <span>Hello! I’m Anshu Patel</span>
+                    <span id="greet">👋 Hello! I’m Anshu Patel</span>
                     <h1>Full Stack Web Developer</h1>
                 </div>
                 <div class="call-to-action">
 
-                    <div class="theme-switcher">
+                    <div class="theme-toggle">
                         <input type="checkbox" id="switch" class="checkbox">
-                        <label for="switch" class="toggle">
+                        <label for="switch">
                             <div class="dark">Dark</div>
                             <div class="light">Light</div>
                         </label>
@@ -41,90 +40,70 @@
                     <a class="btn btn-accent" href="#">Portfolio</a>
                 </div>
                 <div class="featured">
-                    <h2>Featured</h2>
+                    <h2>About Me</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus libero animi temporibus, autem in
-                        ex
-                        itaque officiis sit, tempore aperiam veritatis consequatur fugit alias mollitia eos, ea quae aut
-                        quam?
+                        I'm Anshu Patel, a 2nd year BCA student at Manipal University Jaipur. Currently honing my
+                        skills in Web Development, having practical knowledge in various web technologies like: <br>
+                        <b>🎨 Frontend</b> [HTML, CSS, JavaScript] <br>
+                        <b>💽 Databases</b> [MySQL, MongoDB] <br>
+                        <b>💻 Backend</b> [Node, Express]
                     </p>
                 </div>
                 <div class="social-links">
-                    <div class="btn link-item">
+
+                    <a href="https://www.linkedin.com/in/anshupatelz/" target="_blank" rel="nofollow"
+                        class="btn link-item">
                         <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-                    <div class="btn link-item">
+                    </a>
+                    <a href="https://github.com/anshupatelz/" target="_blank" rel="nofollow" class="btn link-item">
                         <i class="fa-brands fa-github"></i>
-                    </div>
-                    <div class="btn link-item">
+                    </a>
+                    <!-- <a href="https://www.instagram.com/anshupatelz/" class="btn link-item">
                         <i class="fa-brands fa-instagram"></i>
-                    </div>
-                    <div class="btn link-item">
+                    </a> -->
+                    <a href="mailto:hello@anshupatel.in" target="_blank" rel="nofollow" class="btn link-item">
                         <i class="fa-regular fa-envelope"></i>
-                    </div>
+                    </a>
                 </div>
                 <div class="quick-links">
                     <h2>Quick Links</h2>
-                    <div class="btn link-item">
+                    <a href="https://youtu.be/WG5ikvJ2TKA?si=ZFNuCnEGSAvUXABE" target="_blank" rel="nofollow"
+                        class="btn link-item">
                         <i class="fa-solid fa-link"></i>
-                        <span>1 Link text</span>
-                    </div>
-                    <div class="btn link-item">
+                        <span>What is Front-end? A Complete Overview</span>
+                    </a>
+                    <a href="https://youtu.be/XBu54nfzxAQ?si=YhG9AOFaZTjUerwN" target="_blank" rel="nofollow"
+                        class="btn link-item">
                         <i class="fa-solid fa-link"></i>
-                        <span>2 Link text</span>
-                    </div>
-                    <div class="btn link-item">
-                        <i class="fa-solid fa-link"></i>
-                        <span>3 Link text</span>
-                    </div>
-                    <div class="btn link-item">
-                        <i class="fa-solid fa-link"></i>
-                        <span>4 Link text</span>
-                    </div>
-                    <div class="btn link-item">
-                        <i class="fa-solid fa-link"></i>
-                        <span>5 Link text</span>
-                    </div>
-                    <div class="btn link-item">
-                        <i class="fa-solid fa-link"></i>
-                        <span>6 Link text</span>
-                    </div>
+                        <span>What is Back-end? A Complete Overview</span>
+                    </a>
                 </div>
                 <div class="projects">
-                    <h2>My Projects</h2>
-                    <div class="btn link-item">
+                    <h2>My Recent Project</h2>
+                    <a href="#" target="_blank" rel="nofollow" class="btn link-item">
                         <div class="project-heading">
                             <i class="fa-regular fa-file-lines"></i>
-                            <h3>Project Name</h3>
+                            <h3>BizList - A Business Listing Website</h3>
                         </div>
                         <div class="project-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel pariatur repellendus
-                            quidem
-                            quos ea omnis reprehenderit saepe magni deserunt?
+                            <div class="tech-stack">
+                                <span>Teck Stack:</span>
+                                <span>
+                                    <code>MongoDB</code>
+                                    <code>Express.js</code>
+                                    <code>Node.js</code>
+                                    <code>Bootstrap</code>
+                                    <code>EJS</code>
+                                </span>
+                            </div>
+                            <div class="description">
+                                <span>Description:</span>
+                                <span>A full stack website where businesses can Create, Edit, Delete and View their
+                                    business listing. User can search, filter, and view listings
+                                    also able to leave a review. </span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="btn link-item">
-                        <div class="project-heading">
-                            <i class="fa-regular fa-file-lines"></i>
-                            <h3>Project Name</h3>
-                        </div>
-                        <div class="project-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel pariatur repellendus
-                            quidem
-                            quos ea omnis reprehenderit saepe magni deserunt?
-                        </div>
-                    </div>
-                    <div class="btn link-item">
-                        <div class="project-heading">
-                            <i class="fa-regular fa-file-lines"></i>
-                            <h3>Project Name</h3>
-                        </div>
-                        <div class="project-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vel pariatur repellendus
-                            quidem
-                            quos ea omnis reprehenderit saepe magni deserunt?
-                        </div>
-                    </div>
+                    </a>
                 </div>
             </div>
 

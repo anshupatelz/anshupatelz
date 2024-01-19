@@ -1,34 +1,9 @@
-/* Theme Colors - Start */
-:root {
-    --background-color: linear-gradient(#13222F 0%, #10151D 30%);
-    --text-color: #d9dfe7;
-    --accent-color: #4D34FA;
-    --primary-color: #0e141c;
-    --secondary-color: rgb(217, 217, 217, 0.05);
-}
-
-body.lightMode {
-    --background-color: linear-gradient(#acd6fa 0%, #eeeeee 30%);
-    --text-color: #333333;
-    --accent-color: #4D34FA;
-    --primary-color: #ffffff;
-    --secondary-color: rgba(82, 82, 82, 0.25);
-
-
-}
-
-/* Theme Colors - End */
-
 /* CSS Reset - Start */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Space Grotesk', sans-serif;
-}
-
-body {
-    font-family: sans-serif;
     line-height: 1.5;
 }
 
@@ -47,6 +22,77 @@ button {
 
 /* CSS Reset - End */
 
+/* Theme Variables - Start */
+:root {
+    --background-color: linear-gradient(rgb(19, 34, 47) 0%, rgb(16, 21, 29) 30%);
+    --primary-color: rgb(14, 20, 28);
+    --secondary-color: rgb(217, 217, 217, 0.05);
+    --border-color: rgb(36, 47, 65);
+    --accent-color: rgb(77, 52, 250);
+    --text-color: rgb(178, 178, 178);
+    --bg-image: url(/bio/resources/bg-dark-dots.svg);
+    --font-size: 1rem;
+}
+
+body.lightMode {
+    --background-color: linear-gradient(rgb(77, 52, 250, 0.05) 0%, #ffffff 80%);
+    --primary-color: rgb(235, 232, 255);
+    --secondary-color: rgb(77, 52, 250, 0.2);
+    --border-color: rgb(77, 52, 250, 0.3);
+    --accent-color: rgb(77, 52, 250);
+    --text-color: #2c2c2c;
+    --bg-image: url(/bio/resources/bg-light-dots.svg);
+}
+
+/* Theme Variables - End */
+
+/* Theme Modes styles - Start */
+.theme-toggle {
+    width: 100%;
+}
+
+.checkbox {
+    display: none;
+}
+
+.dark,
+.light {
+    background-color: transparent;
+    text-align: center;
+    width: 50%;
+    padding: 7px 0;
+}
+
+.theme-toggle label {
+    width: 100%;
+    position: relative;
+    display: block;
+    border-radius: 25px;
+    display: flex;
+    border: 2px solid var(--border-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.theme-toggle label:after {
+    content: "";
+    height: 24px;
+    width: 50%;
+    background-color: var(--secondary-color);
+    position: absolute;
+    border-radius: 25px;
+    padding: 7px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.theme-toggle .checkbox:checked+label:after {
+    content: "";
+    left: 50%;
+}
+
+/* Theme Modes styles - End */
+
 /* Global Styles - Start */
 
 body {
@@ -55,14 +101,39 @@ body {
 }
 
 .background-img {
-    background-image: url(/resources/background-dots.svg);
+    background: var(--bg-image);
     filter: contrast(100%);
     background-position: 50%;
-    background-size: 180px;
+    background-size: 100px;
 }
 
 main {
     min-height: 95vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: calc(var(--font-size)*3);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+code {
+    padding: 3px 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    text-align: start;
+    font-size: calc(var(--font-size)*0.9);
 }
 
 .btn {
@@ -74,13 +145,22 @@ main {
     cursor: pointer;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 50px 20px;
+.btn:hover {
+    background-color: var(--accent-color);
+    transition: linear 0.3s;
+    transform: scale(1.02);
+}
+
+.lightMode .btn:hover code {
+    background-color: var(--primary-color);
+}
+
+.lightMode .btn:hover {
+    color: var(--primary-color);
+}
+
+#greet {
+    font-size: calc(var(--font-size)*1.7);
 }
 
 .profile-img,
@@ -93,13 +173,16 @@ main {
     background-color: var(--primary-color);
     color: var(--text-color);
     padding: 20px;
-    border: 1.5px solid #242f41;
+    border: 1.5px solid var(--border-color);
     border-radius: 25px;
 }
 
 .profile-img {
     grid-column: span 2;
     padding: 0 !important;
+    min-width: 150px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .intro {
@@ -116,6 +199,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    min-width: 150px;
 }
 
 .call-to-action .btn {
@@ -125,7 +209,11 @@ main {
 
 .call-to-action .btn-accent {
     background-color: var(--accent-color);
-    font-weight: 500;
+    font-weight: 700;
+}
+
+.lightMode .call-to-action .btn-accent {
+    color: #ffffff;
 }
 
 .featured {
@@ -165,9 +253,8 @@ footer {
     padding: 10px 0;
 }
 
-/* Add responsive behavior */
+/* Responsive Behavior - Start*/
 /* ---------Tablet Mode */
-/* @media (max-width: 768px) */
 @media (max-width: 768px) {
     .profile-img {
         grid-column: span 3;
@@ -232,7 +319,21 @@ footer {
     }
 }
 
+/* Responsive Behavior - End*/
+
 /* Global Styles - End */
+
+/* Social Links Styles - Start */
+.social-links .link-item {
+    font-size: calc(var(--font-size)*1.5);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+/* Social Links Styles - End */
 
 /* Quick Links Styles - Start */
 .quick-links .link-item {
@@ -255,67 +356,17 @@ footer {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
+}
+
+.projects .project-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projects .project-content .tech-stack {
+    line-height: 1.8;
 }
 
 /* Projects Styles - End */
-
-/* Social Links Styles - Start */
-.social-links .link-item {
-    font-size: 24px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-
-/* Social Links Styles - End */
-
-/* theme-mode styles - Start */
-
-
-
-
-.theme-switcher {
-    width: 100%;
-}
-
-.checkbox {
-    display: none;
-}
-
-.dark, .light{
-background-color: transparent;
-text-align: center;
-width: 50%;
-padding: 7px 0;
-}
-
-label {
-    width: 100%;
-    position: relative;
-    display: block;
-    border-radius: 25px;
-    display: flex;
-    border: 2px solid #242f41;
-    text-align: center;
-}
-
-label:after {
-    content: "";
-    height: 24px;
-    width: 50%;
-    background-color: var(--secondary-color);
-    position: absolute;
-    border-radius: 25px;
-    padding: 7px 0;
-    text-align: center;
-    cursor: pointer;
-}
-
-.checkbox:checked+label:after {
-    content: "";
-    left: 50%;
-}
-
-/* theme-mode styles - End */
